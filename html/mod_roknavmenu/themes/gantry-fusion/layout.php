@@ -167,6 +167,18 @@ class GantryFusionLayout extends AbstractRokMenuLayout
             $group_css = ' type-module';
         }
 
+	    //custom onclick thing
+	    if ($item->hasLink()) {
+		if ($item_params->get('fusion_onclick')) {
+		    $fusion_onclick = 'onclick="' . $item_params->get('fusion_onclick') . '" ';
+		}
+		elseif ($item->hasAttribute('onclick')) {
+		    $fusion_onclick = 'onclick="' . $item->getAttribute('onclick') . '" ';
+		}
+		else { $fusion_onclick = ''; }
+	    }
+
+
 	    //not so elegant solution to add subtext
 	    $item_subtext = $item_params->get('fusion_item_subtext','');
 	    if ($item_subtext=='') $item_subtext = false;
@@ -195,7 +207,7 @@ class GantryFusionLayout extends AbstractRokMenuLayout
         ?>
         <li <?php if($item->hasListItemClasses()) : ?>class="<?php echo $item->getListItemClasses()?>"<?php endif;?> <?php if($item->hasCssId() && $this->activeid):?>id="<?php echo $item->getCssId();?>"<?php endif;?>>
             <?php if ($item->getType() == 'menuitem') : ?>
-                <a <?php if($item->hasLinkClasses()):?>class="<?php echo $item->getLinkClasses();?>"<?php endif;?> <?php if($item->hasLink()):?>href="<?php echo $item->getLink();?>"<?php endif;?> <?php if($item->hasTarget()):?>target="<?php echo $item->getTarget();?>"<?php endif;?> <?php if ($item->hasAttribute('onclick')): ?>onclick="<?php echo $item->getAttribute('onclick'); ?>"<?php endif; ?><?php if ($item->hasLinkAttribs()): ?> <?php echo $item->getLinkAttribs(); ?><?php endif; ?>>
+                <a <?php if($item->hasLinkClasses()):?>class="<?php echo $item->getLinkClasses();?>"<?php endif;?> <?php if($item->hasLink()):?>href="<?php echo $item->getLink();?>"<?php endif;?> <?php if($item->hasTarget()):?>target="<?php echo $item->getTarget();?>"<?php endif;?> <?php echo $fusion_onclick; ?><?php if ($item->hasLinkAttribs()): ?> <?php echo $item->getLinkAttribs(); ?><?php endif; ?>>
                     <span>
                     <?php if ($custom_image && $custom_image != -1) :?>
                         <img src="<?php echo $gantry->templateUrl."/images/icons/".$custom_image; ?>" alt="<?php echo $custom_image; ?>" />

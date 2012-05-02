@@ -6,7 +6,7 @@
                 <field name="fusion_item_subtext" type="text" size="30" default="" label="Subtext Line"
                        description="You can put a second line here"></field>
                 <field name="fusion_customimage" type="imagelist" default="" label="Menu Image" description=""
-                       directory="/templates/rt_gantry/images/icons" exclude="" stripext=""/>
+                       directory="/templates/linbit/images/icons" exclude="" stripext=""/>
                 <field name="fusion_customclass" type="text" size="30" label="Custom CSS Class"
                        description="A Custom CSS class that can be assigned to this item"/>
                 <field name="fusion_columns" type="list" default="1" label="Columns of Child Items"
@@ -38,6 +38,9 @@
                 </field>
                 <field name="fusion_modules" type="modules" label="Child Modules"/>
                 <field name="fusion_module_positions" type="modpositions" label="Child Module Positions"/>
+
+		<field name="fusion_onclick" type="text" default="" label="OnClick Event"
+		       description="Add 'onclick' event to anchor tag"></field>
             </fieldset>
         </fields>
     </config>

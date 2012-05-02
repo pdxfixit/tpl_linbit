@@ -1,0 +1,48 @@
+#accordion {
+	width: 100%;
+}
+#togglers {
+	float: left;
+	width: 125px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	position: absolute;
+}
+.toggler {
+	cursor: pointer;
+	height: 50px;
+	padding: 5px;
+	line-height: 25px;
+	margin: 0;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#elements {
+	background: #FFF;
+	margin-top: -10px;
+	min-height: 200px;
+	padding-left: 128px;
+}
+div.element {
+	padding: 10px;
+}
+
+/* Mobile Overrides */
+.nav-spacer {
+	width:125px !important;
+}
+.nav-header {
+	width:125px !important;
+}
+.nav-subtext {
+	width:125px !important;
+}
+.nav-header-small {
+	font-size:13px !important;
+	width:125px !important;
+}
+.nav-subtext-small {
+	width:125px !important;
+}
+.nav-icons { display: none; }

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="1.6.0" type="template" method="upgrade" client="site">
-    <name>rt_gantry</name>
-    <author>RocketTheme, LLC</author>
-    <creationDate>April 2, 2012</creationDate>
-    <copyright>(C) 2005 - 2012 RocketTheme, LLC. All rights reserved.</copyright>
+    <name>linbit</name>
+    <author>PDXfixIT, LLC</author>
+    <creationDate>May 2012</creationDate>
+    <copyright>Copyleft (c) 2012 PDXfixIT, LLC</copyright>
     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
-    <authorEmail>support@rockettheme.com</authorEmail>
-    <authorUrl>http://www.rockettheme.com</authorUrl>
-    <version>3.2.19</version>
-    <description>${project.description}</description>
+    <authorEmail>info@pdxfixit.com</authorEmail>
+    <authorUrl>http://www.pdxfixit.com</authorUrl>
+    <version>1.0.0</version>
     <legacycss>true</legacycss>
     <files>
         <filename>index.php</filename>
@@ -36,6 +35,7 @@
     <positions>
         <position>analytics</position>
         <position>drawer</position>
+	<position>floater</position>
         <position>top-a</position>
         <position>top-b</position>
         <position>top-c</position>
@@ -49,6 +49,7 @@
         <position>header-e</position>
         <position>header-f</position>
         <position>navigation</position>
+	<position>nav-search</position>
         <position>showcase-a</position>
         <position>showcase-b</position>
         <position>showcase-c</position>
@@ -112,11 +113,11 @@
         <position>debug</position>
     </positions>
     <languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.tpl_rt_gantry.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_linbit.ini</language>
     </languages>
 	<config>
         <fields name="params">
-            <fieldset name="base" addfieldpath="/templates/rt_gantry/fields">
+            <fieldset name="base" addfieldpath="/templates/linbit/fields">
                 <field name="master" type="hidden" value="true" default="true"/>
                 <field type="spacer" label="This template needs the &lt;a href='http://www.gantry-framework.org'&gt;Gantry Template Framework&lt;/a&gt;.  Please download and install from &lt;a href='http://www.gantry-framework.org'&gt;here&lt;/a&gt;"/>
             </fieldset>

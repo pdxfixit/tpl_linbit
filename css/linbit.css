@@ -1,0 +1,319 @@
+/* Linbit */
+
+/* Sorry, RocketTheme... */
+#rocket { display: none; }
+
+/* Logo */
+a#rt-logo { background: url(../images/logo/linbit.png) 0 0 no-repeat; display: block; height: 42px; position: relative; top: 15px; width: 199px; }
+
+/* Menu */
+div#rt-menu ul.menu li a:hover,
+ul.menutop li.root > .item:hover,
+ul.menutop li.active.root.f-mainparent-itemfocus > .item,
+ul.menutop li.root.f-mainparent-itemfocus > .item,
+.menu-type-splitmenu ul.menutop li:hover > .item { background: #444; color: #fff; -webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+
+/* Sidebars */
+div#rt-sidebar-a { background-color: #fff; }
+div#rt-sidebar-c { background-color: #ddd; border-radius: 10px; margin-top: 5px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+
+/*
+ * Legacy
+ */
+
+/* Item-separator */
+.item-separator {border-bottom: 2px #c8c8c8 dotted;}
+.component-content .rt-article-bg { border-bottom: none !important; }
+
+/* Horizontal Menus  */
+#horizmenu li {
+  top: -13px;
+  padding-left: 12px;
+  float : right;
+  list-style : none;
+  font-size: 8px;
+  position: relative;
+}
+
+#horizmenu-top li {
+  top: -13px;
+  padding-left: 15px;
+  float: left;
+  list-style: none;
+  font-size: 10px;
+  position: relative;
+}
+
+/* Search bar inside nav */
+.nav-search {
+  position: relative;
+  text-align: right;
+  top: -30px;
+  right: 24px;
+}
+
+/* Rounded Navigation Tabs */
+li.active > .item.bullet {
+  -webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;
+}
+
+/* Page-top Padding */
+#rt-header { margin-top:15px; }
+
+/* Mouseover Tooltips on Forms */
+.tip { background-color: rgba(251,133,25,.8);padding:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:1px solid; }
+.tip-title { font-weight: bold; }
+
+
+/********************
+Custom Footer Rules
+********************/
+/* Footer Color Overrides Gantry Settings */
+#rt-bottom .rt-container {
+background: #000 !important; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdjN2M3YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=) !important;
+background: -moz-linear-gradient(top,  #7c7c7c 0%, #000000 90%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7c7c7c), color-stop(90%,#000000)) !important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7c7c7c 0%,#000000 90%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7c7c7c 0%,#000000 90%) !important; /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7c7c7c 0%,#000000 90%) !important; /* IE10+ */
+background: linear-gradient(top,  #7c7c7c 0%,#000000 90%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#000000',GradientType=0 ) !important; /* IE6-8 */
+}
+
+#rt-bottom .rt-block {
+  padding: 0px 10px 0px 10px !important;
+}
+
+#rt-bottom p {
+  color: #FFF;
+  margin: 0px;
+}
+#rt-bottom p.contact {
+  text-align: right;
+  line-height: 1.2em;
+  padding-top: 3px;
+  font-size: 14px;
+}
+#rt-bottom p.quote {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+#rt-bottom a:hover {
+  color: #fff;
+}
+#rt-bottom img.social {
+  vertical-align: middle;
+}
+#rt-bottom .rt-omega {
+  height: 50px;
+}
+
+
+/*******************
+Custom Header Rules
+*******************/
+#rt-header p.contact {
+  color: #000;
+  text-align: right;
+  bottom: -10px;
+  position: relative;
+  margin: 0px;
+}
+#rt-header .rt-block {
+  margin-bottom: 0px !important;
+}
+
+/* Buttons for "BUY NOW" etc. */
+.article-button {
+   border-top: 1px solid #92accc;
+   background: #336798;
+   background: -webkit-gradient(linear, left top, left bottom, from(#a6b9d7), to(#336798));
+   background: -webkit-linear-gradient(top, #a6b9d7, #336798);
+   background: -moz-linear-gradient(top, #a6b9d7, #336798);
+   background: -ms-linear-gradient(top, #a6b9d7, #336798);
+   background: -o-linear-gradient(top, #a6b9d7, #336798);
+   padding: 4.5px 9px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 11px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   font-weight: bold;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.article-button:hover {
+   border-top-color: #336798;
+   background: #336798;
+   color: #ccc;
+}
+.article-button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}
+
+/* Index Navigation */
+.nav-spacer {
+  padding-top: 5px;
+  width: 190px;
+  position: relative;
+  height: 50px;
+}
+.nav-current {
+  border-bottom: 2px #C8C8C8 dotted;
+  border-top: 2px #C8C8C8 dotted;
+  padding-bottom: 4px;
+  margin-top: 4px;
+}
+.nav-padding {
+  height: 10px;
+}
+.nav-top-padding {
+  height: 27px;
+}
+.nav-icons {
+  height: 55px;
+  width: 60px; 
+  position: relative;
+  float: left;
+}
+.nav-header {
+  padding-top: 5px;
+  width: 129px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  float: right;
+}
+.nav-header-small {
+  padding-top: 5px;
+  width: 129px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  float: right;
+}
+.nav-subtext {
+  top: -1px;
+  width: 129px;
+  font-weight: normal;
+  font-size: 11px;
+  float: right;
+  position: relative;
+  line-height: 13px;
+}
+.nav-subtext-small {
+  top: -1px;
+  width: 129px;
+  font-weight: normal;
+  font-size: 9px;
+  float: right;
+  position: relative;
+  line-height: 13px;
+}
+/* Override Default Padding */
+#rt-sidebar-a .rt-block {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Text menu for under icon menu */
+ul#nav-textnav {
+  text-decoration: underline;
+  list-style-type:none;
+  font-size: 10px;
+  position: relative;
+  left: -10px;
+}
+
+/* Tweet Module */
+.tweet-module-title {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  width: 132px;
+  padding-top: 20px;
+}
+.tweet-title-link {
+  width: 50px;
+  position: relative;
+  float: right;
+  top: -20px;
+  text-decoration: underline;
+}
+/* Reduces padding */
+#rt-sidebar-c .rt-block {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* Featured Articles */
+.feature-image {
+  width: 114px;
+  position: absolute;
+  top: 35px;
+  left: 348px;
+}
+h1.feature-title {
+  color: #fb8523;
+  font-style: italic;
+}
+h1.feature-title:hover {
+  color: #222;
+}
+h3.feature-tagline {
+  font-style: italic;
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+  height: 30px;
+  border-bottom: 2px #c8c8c8 dotted;
+}
+.feature-article {
+  padding-top: 5px;
+}
+.feature-readmore {
+  position: relative;
+  top: -14px;
+  text-align: right;
+}
+.feature-buttons {
+  
+}
+
+/* DOCman Bottom Navigation (Pages)
+   Fixes list to look like a proper nav */
+#dm_nav.pagination ul li {
+  list-style-type: none;
+  float: left;
+  padding-left: 10px;
+  line-height: 2em !important;
+}
+
+/* Customer Logos */
+div.customerlogos img {
+  padding: 20px;
+  margin: 1px;
+}
+div.customerlogos img:hover {
+  margin: 0px;
+  border: 1px solid;
+/*  border-radius: 8px;
+  -moz-border-radius: 8px; */
+}
+
+/* Fixing Unordered List Item Anchors in article content */
+div.item-page ul li a {
+  font-size: 1em;
+}

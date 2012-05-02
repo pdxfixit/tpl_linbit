@@ -1,4 +1,4 @@
-<img src="<?php echo $gantry->templateUrl . '/template_thumbnail.png';?>" width="206" height="150" class="template-preview" alt=""/>
+<img src="<?php echo $gantry->templateUrl . '/template_thumbnail.jpg';?>" width="250" height="170" class="template-preview" alt=""/>
 <h1><?php echo $gantry->get('template_full_name');?> <span>v<?php echo $gantry->_template->getVersion();?></span></h1>
 <p>Gantry framework default theme is just a small example on how easy you can create your Gantry based themes.</p>
 
