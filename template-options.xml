@@ -45,16 +45,16 @@
         <field name="bgcolor" type="colorchooser" default="#dddddd" label="BG_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="headercolor" type="colorchooser" default="#111111" label="HEADER_COLOR" setinsession="true"
+        <field name="headercolor" type="colorchooser" default="#ffffff" label="HEADER_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
         <field name="bottomcolor" type="colorchooser" default="#111111" label="BOTTOM_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="footercolor" type="colorchooser" default="#666666" label="FOOTER_COLOR" setinsession="true"
+        <field name="footercolor" type="colorchooser" default="#fb8523" label="FOOTER_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="linkcolor" type="colorchooser" default="#cc0000" label="LINK_COLOR" setinsession="true"
+        <field name="linkcolor" type="colorchooser" default="#e8a451" label="LINK_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
         <fields name="webfonts" type="chain" label="WEBFONTS">
@@ -155,9 +155,9 @@
         </fields>
 
         <fields name="copyright" type="chain" label="COPYRIGHT">
-            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
             <field name="position" type="position" translation="false" default="copyright" label="POSITION"/>
-            <field name="text" type="text" default="Designed by RocketTheme" label="" class="text-long"/>
+            <field name="text" type="text" default="LINBIT Your Way to High Availability : Phone +43 1 817 82 92 for US: +1-877-454-6248 (+1-877-4-LINBIT)" label="" class="text-long"/>
         </fields>
 
         <fields name="smartload" type="chain" labeel="SMARTLOAD">
@@ -168,7 +168,7 @@
         </fields>
 
         <fields name="totop" type="chain" label="TOTOP">
-            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
             <field name="position" type="position" translation="false" default="copyright" label="POSITION"/>
             <field name="text" type="text" default="Scroll to Top" label="" class="text-long"/>
         </fields>
@@ -208,9 +208,9 @@
             <field name="type" type="selectbox" selector="true" default="fusionmenu" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
             <fields type="set" name="fusionmenu" label="FUSION">
                 <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
-                <field name="position" type="position" translation="false" default="header-b" label="POSITION" />
+                <field name="position" type="position" translation="false" default="navigation" label="POSITION" />
                 <field name="enable_js" type="toggle" default="1" label="ENABLE_JS" />
-                <field name="opacity" type="text" default="1" label="MENU_OPACITY" class="text-short" />
+                <field name="opacity" type="text" default="0.95" label="MENU_OPACITY" class="text-short" />
                 <field name="effect" type="selectbox" default="slidefade" label="MENU_EFFECT">
                     <option value="slide">SLIDE</option>
                     <option value="slidefade">SLIDEFADE</option>
@@ -267,21 +267,21 @@
         <field name="layoutstips" type="tips" tab="layouts" panel_position="right" show_label="false"/>
 
         <fields name="top" type="position" label="TOP_POS">
-            <field name="layout" type="positions" default="5,7" label="">
+            <field name="layout" type="positions" default="7,5" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
-            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
-            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+            <field name="showall" type="toggle" default="1" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="2" label="POS_COUNT"/>
         </fields>
 
         <fields name="header" type="position" label="HEADER_POS">
-            <field name="layout" type="positions" default="3,3,3,3" label="">
+            <field name="layout" type="positions" default="7,5" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
-            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
-            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+            <field name="showall" type="toggle" default="1" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="2" label="POS_COUNT"/>
         </fields>
 
         <fields name="showcase" type="position" label="SHOWCASE_POS">
@@ -294,7 +294,7 @@
         </fields>
 
         <fields name="feature" type="position" label="FEATURE_POS">
-            <field name="layout" type="positions" default="3,3,3,3" label="">
+            <field name="layout" type="positions" default="12" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
@@ -312,7 +312,7 @@
         </fields>
 
         <fields name="maintop" type="position" label="MAINTOP_POS">
-            <field name="layout" type="positions" default="3,3,3,3" label="">
+            <field name="layout" type="positions" default="12" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
@@ -336,7 +336,7 @@
         </fields>
 
         <fields name="bottom" type="position" label="BOTTOM_POS">
-            <field name="layout" type="positions" default="3,3,3,3" label="">
+            <field name="layout" type="positions" default="6,6" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
@@ -364,10 +364,10 @@
         </field>
         <field name="iphonetips" type="tips" tab="mobile" panel_position="right" show_label="false"/>
 
-        <field name="iphone-enabled" type="toggle" default="1" label="IPHONE_ENABLED"/>
-        <field name="android-enabled" type="toggle" default="1" label="ANDROID_ENABLED"/>
+        <field name="iphone-enabled" type="toggle" default="0" label="IPHONE_ENABLED"/>
+        <field name="android-enabled" type="toggle" default="0" label="ANDROID_ENABLED"/>
 
-        <field name="iphone-scalable" type="toggle" default="0" label="IPHONE_SCALABLE"/>
+        <field name="iphone-scalable" type="toggle" default="1" label="IPHONE_SCALABLE"/>
 
         <fields name="iphone-switcher" type="chain" label="IPHONE_STANDARD" description="IPHONE_STANDARD_DESC">
             <field name="enabled" type="toggle" default="0" label="ENABLED" />
@@ -576,7 +576,7 @@
         <field name="advancedtips" type="tips" tab="advanced" panel_position="right" show_label="false"/>
 
         <fields name="cache" type="chain" label="GANTRY_CACHE" setinoverride="false">
-            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="enabled" type="toggle" default="0" label="ENABLED" setinoverride="false"/>
             <field name="time" type="text" default="900" label="CACHE_TIME" class="text-short" setinoverride="false"/>
         </fields>
 
