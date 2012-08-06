@@ -19,7 +19,7 @@
         <field name="master" type="hidden" value="false" default="true"/>
         <field name="current_id" type="hidden" value="false" default="true"/>
         <field name="gantry" type="gantry" value="" panel_position="hiddens"/>
-        <field name="template_full_name" type="hidden" default="Gantry Template"/>
+        <field name="template_full_name" type="hidden" default="LINBIT Template"/>
         <!--<field name="diagnostic" type="diagnostic" panel_position="right" show_label="false" />-->
         <!--<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false"/>-->
         <field name="grid_system" type="hidden" default="12"/>
@@ -58,13 +58,13 @@
                setbysession="true" setincookie="true" setbycookie="true"/>
 
         <fields name="webfonts" type="chain" label="WEBFONTS">
-            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
             <field name="source" type="selectbox" default="google" label="WEBFONTS_SOURCE">
                 <option value="google">Google Font Directory</option>
             </field>
         </fields>
         <fields name="font" type="chain" label="FONT_SETTINGS">
-            <field name="family" type="fonts" default="helvetica" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+            <field name="family" type="fonts" default="Droid Sans" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
                 <option value="geneva">Geneva</option>
                 <option value="georgia">Georgia</option>
                 <option value="helvetica">Helvetica</option>
